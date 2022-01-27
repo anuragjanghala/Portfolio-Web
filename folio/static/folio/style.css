@@ -1,0 +1,58 @@
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+#brand img {
+    height: 60px;
+    cursor: pointer;
+}
+
+li, a, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(227, 223, 255);
+    text-decoration: none;
+}
+
+
+.nav-link {
+    list-style: none;
+}
+
+.nav-link img {
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav-link li{
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.nav-link li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link li a:hover {
+    color: rgb(38, 48, 184);
+}
+
+#contact button {
+    padding: 9px 25px;
+    background-color: rgba(38,48,184,1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 15px;
+    padding: 20px 40px;
+}
+
+#contact button:hover {
+    background-color: rgba(27, 33, 112,1);
+}

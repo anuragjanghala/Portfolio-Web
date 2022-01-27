@@ -6,7 +6,9 @@ html {
 
 body {
     margin: 0;
-    background-color: #1a1a1a;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #101733;
 }
 
 h1 {

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
 header {
     margin: 0;
     display: flex;
@@ -55,4 +58,95 @@ li, a, button {
 
 #contact button:hover {
     background-color: rgba(27, 33, 112,1);
+}
+
+
+
+#front-page {
+    height: 50rem;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#front-page h1 {
+    color:rgb(227, 223, 255);
+    font-size: 100px;
+    margin: 0;
+    padding: 0 300px;
+    padding-top: 100px;
+    font-family: 'Caveat', cursive;
+}
+
+#front-page h3 {
+    color:rgb(227, 223, 255);
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+    padding: 0 300px;
+}
+
+#front-page img {
+    float: right;
+    font-size: 5px;
+    padding-right: 100px;
+    height: 350px;
+    width: 350px;
+}
+
+#namaste {
+    height: 100px;
+    width: 100px;
+    float: none;
+}
+
+
+/* about me section */
+
+
+#about-me {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 100px;
+    height: 600px;
+    color:rgb(227, 223, 255);
+    background-color: rgb(40, 49, 70);
+}
+
+
+
+/* Skills section */
+
+#skills {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 100px;
+    height: 600px;
+    color: rgb(227, 223, 255);
+    background-color: rgb(40, 49, 70);
+}
+
+/* Projects section */
+
+#projects {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 100px;
+    height: 600px;
+    color: rgb(227, 223, 255);
+    background-color: rgb(40, 49, 70);
+}
+
+/* Contact section */
+
+
+#contacts {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 100px;
+    height: 600px;
+    color: rgb(227, 223, 255);
+    background-color: rgb(40, 49, 70);
 }

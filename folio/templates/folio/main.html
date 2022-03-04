@@ -2,28 +2,60 @@
 <link rel="stylesheet" href="{% static 'folio/style.css' %}" />
 {% endblock %} {% block content %}
 <header>
-  <div id="brand">
-    <a href=""
-      ><img
-        id="brand-logo"
-        src="{% static 'folio/images/signature.png' %}"
-        alt="Logo"
-    /></a>
-  </div>
-  <nav id="navlist">
-    <ul class="nav-link">
-      <li>
-        <a href="#"> About Me</a>
-      </li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Projects</a></li>
-    </ul>
+  <!--Navbar - bootstrap-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-5-strong">
+    <div class="container-fluid">
+      <!--Brand-Logo-->
+      <a class="navbar-brand" href="#">
+        <img
+          src="{% static 'folio/images/signature.png' %}"
+          alt="LOGO"
+          width="200"
+          height="60"
+        />
+      </a>
+
+      <!--Toggle-button-->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Nav-list-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link not-contact" aria-current="page" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link not-contact" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link not-contact" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link not-contact" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button type="button" class="btn btn-info btn-sm">
+                Contact Me
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <a href="#" id="contact">
-    <button type="text">
-      <span>Contact</span>
-    </button>
-  </a>
 </header>
 
 <div class="container" id="front-page">
@@ -46,4 +78,6 @@
 <div class="container" id="projects">Projects</div>
 
 <div class="container" id="contacts">Contact</div>
+
+<footer>footer</footer>
 {% endblock %}

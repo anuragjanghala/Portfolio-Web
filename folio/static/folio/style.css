@@ -13,13 +13,17 @@ header {
 
 /* navbar elements */
 
+.navbar-toggler {
+    border: none;
+}
+
+/* .navbar-nav {
+    align-items: center;
+} */
+
 .nav-item {
     padding: 0 1rem;
 }
-
-/* .not-contact {
-    color: gold;
-} */
 
 .btn-info {
     background-color: #0f1016;
@@ -33,4 +37,52 @@ header {
     color: #e2defa;
     border: 1px solid #0f1016;
     border-radius: 20px;
+}
+
+
+/* front page */
+
+
+.hero {
+    margin-top: 100px;
+    height: 70vh;
+    color: #EADEDE;
+}
+
+#profile_pic{
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.hero-content {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.hero--content--intro {
+    display: flex;
+    color: #F58840;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.intro--name {
+    font-size: 100px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+}
+
+.description {
+    font-size: 60px;
+    text-align: start;
+    color: #B85252;
+}
+
+.slogan {
+    font-size: 24px;
 }

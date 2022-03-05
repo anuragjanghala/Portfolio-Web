@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
+    font-family: Roboto, sans-serif;
 }
 
 /* navbar elements */
@@ -45,8 +46,9 @@ header {
 
 .hero {
     margin-top: 100px;
-    height: 70vh;
+    height: 85vh;
     color: #EADEDE;
+    font-family: Roboto, sans-serif;
 }
 
 #profile_pic{
@@ -74,15 +76,55 @@ header {
     font-size: 100px;
     letter-spacing: 0.2em;
     font-weight: 700;
-    font-family: Roboto, sans-serif;
 }
 
 .description {
     font-size: 60px;
     text-align: start;
     color: #B85252;
+    letter-spacing: 0.1em;
 }
 
 .slogan {
     font-size: 24px;
+    letter-spacing: 0.2em;
+}
+
+/* social media */
+
+.socials {
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+    color: #EADEDE;
+    letter-spacing: 0.2em;
+}
+
+.socials p:before {
+    content: "";
+    display:block;
+    width: 200px;
+    height:2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.socials p:after {
+    content: "";
+    display:block;
+    width: 200px;
+    height:2px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.socials img {
+    padding: 10px 30px;
+    height: 60px;
 }

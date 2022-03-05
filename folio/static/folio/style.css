@@ -14,6 +14,10 @@ header {
 
 /* navbar elements */
 
+.navbar {
+    background-color: #0f1016;
+}
+
 .navbar-toggler {
     border: none;
 }

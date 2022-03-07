@@ -88,12 +88,56 @@
   </div>
 </section>
 
-<section class="container" id="about-me"></section>
+<!-- About Me Section -->
+<section class="container" id="about-me">
+  <div class="project--wrapper">
+    <div></div>
+  </div>
+</section>
 
+<!-- SKills Section -->
 <div class="container" id="skills">Skills</div>
 
-<div class="container" id="projects">Projects</div>
+<!-- Projects Section -->
+<section class="container">
+  <h3 id="projects-headline">My Projects</h3>
+  <div class="projects--wrapper">
+    <div class="project--column">
+      <img
+        class="project--thumbnail"
+        src="{% static 'folio/images/ecom.png' %}"
+        alt=""
+      />
+      <div class="project--body">
+        <h5>Ecommerce Website</h5>
+      </div>
+    </div>
 
+    <div class="project--column">
+      <img
+        class="project--thumbnail"
+        src="{% static 'folio/images/DL.jpg' %}"
+        alt=""
+      />
+      <div class="project--body">
+        <h5>Audio-Visual Speech Recognition</h4>
+      </div>
+    </div>
+
+    <div class="project--column">
+      <img
+        class="project--thumbnail"
+        src="{% static 'folio/images/app.png' %}"
+        alt=""
+      />
+      <div class="project--body">
+        <h5>Translator App</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
 <div class="container" id="contacts">Contact</div>
 
 <footer>footer</footer>

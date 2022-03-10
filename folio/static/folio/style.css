@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
+
+
 /* header */
 
 header {
@@ -11,6 +13,10 @@ header {
     padding: 30px 100px;
     font-family: Roboto, sans-serif;
 }
+
+
+
+
 
 /* navbar elements */
 
@@ -45,12 +51,16 @@ header {
 }
 
 
+
+
+
+
 /* front page */
 
 
 .hero {
     margin-top: 100px;
-    height: 85vh;
+    margin-bottom: 100px;
     color: #EADEDE;
     font-family: Roboto, sans-serif;
 }
@@ -92,7 +102,12 @@ header {
 .slogan {
     font-size: 24px;
     letter-spacing: 0.2em;
+    color:#EADEDE;
 }
+
+
+
+
 
 /* social media */
 
@@ -109,7 +124,7 @@ header {
     display:block;
     width: 200px;
     height:2px;
-    background: #fff;
+    background: #EADEDE;
     position: absolute;
     left: 0;
     top: 50%;
@@ -121,7 +136,7 @@ header {
     display:block;
     width: 200px;
     height:2px;
-    background: #fff;
+    background: #EADEDE;
     position: absolute;
     right: 0;
     top: 50%;
@@ -132,6 +147,102 @@ header {
     padding: 10px 30px;
     height: 60px;
 }
+
+
+
+
+/* About-Me section */
+
+#about-me {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#about-me .row {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about-me .col {
+    padding: 40px;
+}
+
+.about-img {
+    position: relative;
+    
+}
+
+#about-me .shape {
+    position: relative;
+    padding-left: 100px;
+}
+
+#about-me .aj-pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#about-me .about-desc {
+    padding: 1em;
+}
+
+#about-me .about-desc .about-desc-title{
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #B85252;
+}
+
+#about-me .about-desc .about-desc-para1 {
+    font-family: Roboto,
+    sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #EADEDE;
+}
+
+#about-me .about-desc .about-desc-para2 {
+    font-family: Roboto,
+    sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #EADEDE;
+}
+
+#about-me .about-desc .resume {
+    font-family: Roboto,
+    sans-serif;
+    text-align: center;
+}
+
+#about-me .about-desc .resume .resume-btn{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    background-color: #0f1016;
+    color: gold;
+    border: 1px solid gold;
+}
+
+#about-me .about-desc .resume .resume-btn:hover {
+    background-color: #B85252;
+    color: #e2defa;
+    border: 1px solid #0f1016;
+}
+
+
+
+/* Skills section */
+
+
+
+
 
 
 /* project section */
@@ -189,3 +300,4 @@ header {
     background-color: #fff;
     padding: 1em;
 }
+

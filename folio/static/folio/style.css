@@ -240,51 +240,33 @@ header {
 
 /* Skills section */
 
+.slider {
+    margin: 0;
+}
+
+
 .orb {
-    width: 50px;
+    width: 110px;
     height: 50px;
-    background: #999;
+    /* background: #999; */
     border-radius: 50px;
     display: inline-block;
     margin: 0 24.7px;
     float: none;
-    transition: all .2s ease-out;
+    transition: all .1s ease-out;
 }
 
-.orb:hover {
+/* .orb:hover {
     transform: scale(1.2);
     opacity: .5;
     cursor: pointer;
-}
+} */
 
-.red {
-    background: red;
-}
-
-.yellow {
-    background: yellow;
-}
-
-.blue {
-    background: blue;
-}
-
-.orange {
-    background: orange;
-}
-
-.purple {
-    background: purple;
-}
-
-.green {
-    background: green;
-}
 
 .marquee {
-    height: 200px;
-    width: 800px;
-    border: 2px solid #eee;
+    height: 300px;
+    width: auto;
+    /* border: 2px solid #eee; */
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
@@ -296,17 +278,17 @@ header {
     width: 200%;
     margin: 70px 0;
     position: absolute;
-    animation: marquee 20s linear infinite;
+    animation: marquee 10s linear infinite;
 }
 
 .marquee--inner:hover {
     animation-play-state: paused;
 }
 
-/*.half {
+.half {
   float: left;
   width: 10%;
-}*/
+}
 
 span {
     float: left;
@@ -322,7 +304,6 @@ span {
         left: -100%;
     }
 }
-
 
 
 

@@ -169,7 +169,6 @@ header {
 
 .about-img {
     position: relative;
-    
 }
 
 #about-me .shape {
@@ -240,13 +239,55 @@ header {
 
 /* Skills section */
 
-.slider {
-    margin: 0;
+#skills {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#skills .row {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#skills .col {
+    padding: 40px;
+}
+
+#skills .skills-desc {
+    padding: 1em;
+}
+
+#skills .skills-desc .skills-desc-title{
+    font-family: Roboto,
+    sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #B85252;
+}
+
+#skills .skills-desc .skills-desc-para{
+    font-family: Roboto,
+    sans-serif;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #EADEDE;
+}
+
+#skills .skills-img .img{
+    width: 2000px;
+    height: 2000px;
 }
 
 
+
+
+
 .orb {
-    width: 110px;
+    width: 100px;
     height: 50px;
     /* background: #999; */
     border-radius: 50px;
@@ -256,21 +297,19 @@ header {
     transition: all .1s ease-out;
 }
 
-/* .orb:hover {
+.orb:hover {
     transform: scale(1.2);
-    opacity: .5;
+    opacity: 1;
     cursor: pointer;
-} */
-
+}
 
 .marquee {
     height: 300px;
-    width: auto;
-    /* border: 2px solid #eee; */
+    width: 1200px;
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    margin: 200px auto;
+    margin: 50px auto 300px;
 }
 
 .marquee--inner {

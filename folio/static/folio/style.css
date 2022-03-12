@@ -358,9 +358,49 @@ span {
 
 /* project section */
 
+
 .card-img-top {
     width: 100%;
-    height: 150px;
+    height: 300px;
+}
+
+
+#projects .row {
+    justify-content: space-around;
+    margin: 70px auto 200px;
+}
+
+#projects .card{
+    background-color: #0f1016;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid #e2defa;
+    margin: 30px auto 30px;
+}
+
+#projects .card-body{
+    padding: 30px;
+}
+
+#projects .card-title{
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 5px;
+    color: #F58840;
+}
+
+#projects .card-text {
+    letter-spacing: 0.1em;
+    padding: 5px;
+    color: #e2defa;
+}
+
+#projects .card .btn {
+    padding: 5px 20px;
+    background-color: #F58840;
+    border: 1px solid #e2defa;
+    opacity: .8;
+    border-radius: 50px;
 }
 
 

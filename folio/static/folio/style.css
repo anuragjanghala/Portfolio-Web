@@ -159,7 +159,7 @@ header {
     background-color: #8686861c;
     border: 1px solid #B85252;
     border-radius: 400px;
-    padding: 60px;
+    padding: 100px 60px 60px;
 }
 
 #about-me .row {
@@ -174,11 +174,6 @@ header {
 .about-img {
     position: relative;
 }
-
-/* .about-img img{
-    height: inherit;
-    width: inherit;
-} */
 
 #about-me .shape {
     position: relative;
@@ -251,6 +246,7 @@ header {
 #skills {
     margin-top: 200px;
     margin-bottom: 200px;
+    padding-top: 50px;
 }
 
 #skills .row {
@@ -367,6 +363,10 @@ span {
 
 /* project section */
 
+
+#projects {
+    padding-top: 50px;
+}
 
 .card-img-top {
     width: 100%;

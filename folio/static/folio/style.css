@@ -156,6 +156,10 @@ header {
 #about-me {
     margin-top: 200px;
     margin-bottom: 200px;
+    background-color: #8686861c;
+    border: 1px solid #B85252;
+    border-radius: 400px;
+    padding: 60px;
 }
 
 #about-me .row {
@@ -170,6 +174,11 @@ header {
 .about-img {
     position: relative;
 }
+
+/* .about-img img{
+    height: inherit;
+    width: inherit;
+} */
 
 #about-me .shape {
     position: relative;
@@ -284,7 +293,7 @@ header {
 
 
 .orb {
-    width: 100px;
+    width: 95px;
     height: 50px;
     /* background: #999; */
     border-radius: 50px;
@@ -436,34 +445,25 @@ span {
     z-index: -2;
 }
 
-.projects--wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-/* .project--column {
-
-} */
-
-.project--thumbnail {
-    width: 100%;
-    height: 70%;
-}
-
-.project--body {
-    background-color: #fff;
-    padding: 1em;
-}
 
 
+
+/* Contact Section */
 
 
 /* Footer Section */
 
 
-/* footer {
-    background-color: green;
-} */
+#footer .brand {
+    height: 70px;
+    opacity: 0.8;
+}
+
+#footer .ms-3 img {
+    height: 30px;
+    opacity: 0.8;
+}
+
+#footer span {
+    color: #e2defa;
+}

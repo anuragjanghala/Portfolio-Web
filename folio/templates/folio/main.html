@@ -2,62 +2,6 @@
 <link rel="stylesheet" href="{% static 'folio/style.css' %}" />
 
 {% endblock %} {% block content %}
-<header>
-  <!--Navbar - bootstrap-->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-5-strong">
-    <div class="container-fluid">
-      <!--Brand-Logo-->
-      <a class="navbar-brand" href="#">
-        <img
-          src="{% static 'folio/images/signature.png' %}"
-          alt="LOGO"
-          width="200"
-          height="60"
-        />
-      </a>
-
-      <!--Toggle-button-->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!--Nav-list-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link not-contact" aria-current="page" href="#"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link not-contact" href="#about-me">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link not-contact" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link not-contact" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <button type="button" class="btn btn-info btn-sm">
-                Contact Me
-              </button>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
 
 <!-- Home page -->
 <section class="hero">
@@ -233,16 +177,24 @@
     {% for project in projects %}
     <div class="col-12 col-md-6 col-lg-4">
       <div class="card">
-        <img src="{{ project.thumbnail.url }}" class="card-img-top" alt="..." />
+        <a href="{% url 'project' project.id %}">
+          <img
+            src="{{ project.thumbnail.url }}"
+            class="card-img-top"
+            alt="...img..."
+          />
+        </a>
+
         <div class="card-body">
           <h5 class="card-title">{{ project.title }}</h5>
           <p class="card-text">
-            • Designed an eCommerce website for buying products online.
+            {{project.description}}
+            <!-- • Designed an eCommerce website for buying products online.
             <br />
             • Implemented this on tools like ReactJS library and React-bootstrap
             for Front-end.
             <br />
-            • Integrated Express.JS and Node.JS for server-side implementation.
+            • Integrated Express.JS and Node.JS for server-side implementation. -->
           </p>
           <a href="#" class="btn btn-primary"
             ><img
@@ -254,54 +206,6 @@
     {% empty %}
     <h3>There are no projects in the database</h3>
     {% endfor %}
-    <!-- <div class="col-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img
-          src="{% static 'folio/images/DL.jpeg' %}"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Audio-Visual Speech Recognition</h5>
-          <p class="card-text">
-            • Designed an eCommerce website for buying products online.
-            <br />
-            • Implemented this on tools like ReactJS library and React-bootstrap
-            for Front-end.
-            <br />
-            • Integrated Express.JS and Node.JS for server-side implementation.
-          </p>
-          <a href="#" class="btn btn-primary"
-            ><img
-              src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"
-          /></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img
-          src="{% static 'folio/images/app.png' %}"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Translator App</h5>
-          <p class="card-text">
-            • Designed an eCommerce website for buying products online.
-            <br />
-            • Implemented this on tools like ReactJS library and React-bootstrap
-            for Front-end.
-            <br />
-            • Integrated Express.JS and Node.JS for server-side implementation.
-          </p>
-          <a href="#" class="btn btn-primary"
-            ><img
-              src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"
-          /></a>
-        </div>
-      </div>
-    </div> -->
   </div>
 </section>
 

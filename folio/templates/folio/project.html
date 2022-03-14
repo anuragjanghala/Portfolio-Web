@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% load static %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'folio/style.css' %}" />
+<link rel="stylesheet" href="{% static 'folio/project.css' %}" />
+{% endblock %} {% block content %}
+
+<div class="container">
+  <img class="project--image" src="{{ project.thumbnail.url }}" alt="" />
+
+  <h1>{{project.title}}</h1>
+
+  <hr />
+  <p>{{project.description}}</p>
+</div>
+
+{% endblock %}

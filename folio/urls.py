@@ -5,5 +5,6 @@ from folio import views
 
 urlpatterns = [
     path('',views.index , name='landing-page'),
-    path('project/<str:pk>/', views.projectPage, name='project')
+    path('project/<str:pk>/', views.projectPage, name='project'),
+    path('add-project/', views.addProject, name='add-project')
 ]

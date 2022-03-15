@@ -28,3 +28,17 @@ def addProject(request):
         
     context= { 'form': form }
     return render(request, 'folio/project_form.html', context)
+
+
+def editProject(request, pk):
+    project = Project.objects.get(id=pk)
+    form = ProjectForm(instance=project)
+    
+    if request.method == 'POST':
+        form = ProjectForm(request.POST, request.FILES, instance=project)
+        if form.is_valid():
+            form.save()
+            return redirect('landing-page')
+        
+    context= { 'form': form }
+    return render(request, 'folio/project_form.html', context)

@@ -43,6 +43,15 @@ header {
     border-radius: 20px;
 }
 
+#inbox, 
+#add-project {
+    background-color: #0f1016;
+    color: #e2defa;
+    /* color: gold;
+    border: 1px solid gold;
+    border-radius: 20px;  */
+}
+
 .btn-info:hover {
     background-color: #710851;
     color: #e2defa;
@@ -450,6 +459,19 @@ span {
 
 /* Contact Section */
 
+.contact--form {
+    display: block;
+    max-height: 800px;
+    margin: 0 auto;
+    border: 1px solid #e2defa;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+.mb-3,
+h1 {
+    color: #f58840;
+}
 
 /* Footer Section */
 

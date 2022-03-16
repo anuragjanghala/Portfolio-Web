@@ -9,7 +9,8 @@
     color: #f58840;
   }
 
-  td {
+  td,
+  h5 {
     color: #eadede;
   }
 </style>
@@ -17,6 +18,9 @@
 {% endblock %} {% block content %}
 <div class="container">
   <h3>My Messages</h3>
+
+  <h5>Unread Messages ({{unreadCount}})</h5>
+
   <table class="table">
     <thead>
       <th>Sender</th>

@@ -1,14 +1,25 @@
-from multiprocessing import context
 from django.shortcuts import redirect, render
+from django.contrib import messages
 from .models import Project, Message
-from .forms import ProjectForm
+from .forms import ProjectForm, MessageForm
+
 
 
 # Create your views here.
 
 def index(request):
     projects = Project.objects.all()
-    return render(request, 'folio/main.html', {'projects': projects})
+    form = MessageForm()
+    
+    if request.method == 'POST':
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message was successfully sent!')
+        return redirect('landing-page')
+    
+    context = {'projects': projects, 'form': form}
+    return render(request, 'folio/main.html', context)
 
 
 def projectPage(request, pk):
@@ -47,7 +58,8 @@ def editProject(request, pk):
 
 def inbox(request):
     inbox = Message.objects.all().order_by('is_read')
-    context = {'inbox': inbox}
+    unreadCount = Message.objects.filter(is_read=False).count()
+    context = {'inbox': inbox, 'unreadCount': unreadCount}
     return render(request, 'folio/inbox.html', context)
 
 

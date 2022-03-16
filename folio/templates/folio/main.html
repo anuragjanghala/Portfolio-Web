@@ -210,7 +210,27 @@
 </section>
 
 <!-- Contact Section -->
-<div class="container text-white" id="contacts">Contact</div>
+<section id="contact-me">
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form class="contact--form" method="POST" action="">
+      {% csrf_token %} {% for field in form %}
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"
+          >{{field.label}}</label
+        >
+        {{field}}
+      </div>
+
+      {% endfor %}
+
+      <input class="btn btn-primary" type="submit" value="submit" />
+    </form>
+  </div>
+</section>
+
+<!-- footer section -->
 
 <section id="footer" class="border-top">
   <footer

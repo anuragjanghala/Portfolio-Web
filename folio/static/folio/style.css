@@ -68,11 +68,31 @@ header {
 
 
 .hero {
-    margin-top: 100px;
+    position: relative;
+    /* margin-top: 100px; */
     margin-bottom: 100px;
+    padding: 100px 0;
     color: #EADEDE;
     font-family: Roboto, sans-serif;
 }
+
+
+.hero::after {
+     content: "";
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+     background-image: url('../folio/images/bg-img.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+
 
 #profile_pic{
     height: 300px;
@@ -84,11 +104,11 @@ header {
     width: 800px;
     margin: 0 auto;
     padding-top: 3em;
+    
 }
 
 .hero--content--intro {
     display: flex;
-    color: #F58840;
     justify-content: center;
     align-items: center;
     gap: 2em;
@@ -99,6 +119,8 @@ header {
     font-size: 100px;
     letter-spacing: 0.2em;
     font-weight: 700;
+    color: #F58840;
+    text-shadow: 0 0 20px #000;
 }
 
 .description {
@@ -106,12 +128,14 @@ header {
     text-align: start;
     color: #B85252;
     letter-spacing: 0.1em;
+    text-shadow: 0 0 5px #000;
 }
 
 .slogan {
     font-size: 24px;
     letter-spacing: 0.2em;
     color:#EADEDE;
+    text-shadow: 0 0 5px #000;
 }
 
 
@@ -128,7 +152,7 @@ header {
     letter-spacing: 0.2em;
 }
 
-.socials p:before {
+/* .socials p:before {
     content: "";
     display:block;
     width: 200px;
@@ -150,7 +174,7 @@ header {
     right: 0;
     top: 50%;
     z-index: -2;
-}
+} */
 
 .socials img {
     padding: 10px 30px;
@@ -380,6 +404,7 @@ span {
 .card-img-top {
     width: 100%;
     height: 300px;
+    object-fit: cover;
 }
 
 
@@ -459,19 +484,81 @@ span {
 
 /* Contact Section */
 
+
+#contact-me {
+    position: relative;
+    padding: 90px 0;
+}
+
+#contact-me::after {
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('../folio/images/contact-img3.webp');
+    background-size: cotain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contact-me h1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: #F58840;
+    text-shadow: 0 0 5px #000;
+    text-align: center;
+}
+
+
 .contact--form {
     display: block;
     max-height: 800px;
-    margin: 0 auto;
-    border: 1px solid #e2defa;
+    max-width: 1000px;
     padding: 20px;
-    margin: 100px auto;
+    margin: 50px auto;
+    background: transparent;
 }
 
-.mb-3,
-h1 {
-    color: #f58840;
+
+
+#contact-me .mb-3 {
+    padding: 5px;
+    color: #F58840;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 2px #000;
 }
+
+#contact-me .mb-3 input {
+    width: 100%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .2);
+    border: none;
+    outline: none;
+}
+
+
+#contact-me textarea {
+    width: 100%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .2);
+    border: none;
+    outline: none;
+}
+
+#contact-me input {
+   background-color: rgba(0, 0, 0, 0.726);
+   border: none;
+   outline: none;
+   text-shadow: 0 0 5px #000;
+}
+
 
 /* Footer Section */
 

@@ -10,7 +10,7 @@
   <a class="btn btn-warning" href="{% url 'edit-project' project.id %}">Edit</a>
 
   <hr />
-  <p>{{project.description}}</p>
+  <p>{{project.description|safe}}</p>
 </div>
 
 {% endblock %}

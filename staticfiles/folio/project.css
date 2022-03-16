@@ -1,0 +1,17 @@
+/* body {
+    background-color: aliceblue;
+} */
+
+.container {
+    margin-top: 60px;
+}
+
+.project--image {
+    max-width: 800px;
+    margin: 50px;
+}
+
+h1,p {
+    font-family: Roboto,sans-serif;
+    color: #EADEDE;
+}

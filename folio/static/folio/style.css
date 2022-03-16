@@ -36,6 +36,46 @@ header {
     padding: 0 1rem;
 }
 
+#nav-home {
+    background-color: #0f1016;
+    color: #e5e4e7;
+}
+
+#nav-home:hover {
+    background-color: #0f1016;
+    color: gold;
+}
+
+#nav-aboutme {
+    background-color: #0f1016;
+    color: #e5e4e7;
+}
+
+#nav-aboutme:hover {
+    background-color: #0f1016;
+    color: gold;
+}
+
+#nav-skills {
+    background-color: #0f1016;
+    color: #e5e4e7;
+}
+
+#nav-skills:hover {
+    background-color: #0f1016;
+    color: gold;
+}
+
+#nav-projects {
+    background-color: #0f1016;
+    color: #e5e4e7;
+}
+
+#nav-projects:hover {
+    background-color: #0f1016;
+    color: gold;
+}
+
 .btn-info {
     background-color: #0f1016;
     color: gold;
@@ -46,15 +86,19 @@ header {
 #inbox, 
 #add-project {
     background-color: #0f1016;
-    color: #e2defa;
-    /* color: gold;
-    border: 1px solid gold;
-    border-radius: 20px;  */
+    color: #e5e4e7;
+    font-size: 1em;
+}
+
+#inbox:hover,
+#add-project:hover {
+    background-color: #0f1016;
+    color: gold;
 }
 
 .btn-info:hover {
     background-color: #710851;
-    color: #e2defa;
+    color: #e5e4e7;
     border: 1px solid #0f1016;
     border-radius: 20px;
 }
@@ -296,8 +340,7 @@ header {
 }
 
 #skills .skills-desc .skills-desc-title{
-    font-family: Roboto,
-    sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -401,6 +444,20 @@ span {
     padding-top: 50px;
 }
 
+
+#projects-headline {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    position: relative;
+    letter-spacing: 0.2em;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #B85252;
+}
+
+
 .card-img-top {
     width: 100%;
     height: 300px;
@@ -447,15 +504,9 @@ span {
 }
 
 
-#projects-headline {
-    text-align: center;
-    margin-top: 80px;
-    position: relative;
-    color: #EADEDE;
-    letter-spacing: 0.2em;
-}
 
-#projects-headline:before {
+
+/* #projects-headline:before {
     content: "";
     display: block;
     width: 200px;
@@ -477,7 +528,7 @@ span {
     right: 0;
     top: 50%;
     z-index: -2;
-}
+} */
 
 
 
@@ -562,10 +613,12 @@ span {
 
 /* Footer Section */
 
+#footer .div{
+    background-color:#0f1016;
+}
 
 #footer .brand {
     height: 70px;
-    opacity: 0.8;
 }
 
 #footer .ms-3 img {

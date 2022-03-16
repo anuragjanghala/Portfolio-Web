@@ -32,6 +32,7 @@
         <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a
+              id="nav-home"
               class="nav-link not-contact"
               aria-current="page"
               href="{% url 'landing-page' %}"
@@ -39,22 +40,31 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link not-contact" href="#about-me">About Me</a>
+            <a id="nav-aboutme" class="nav-link not-contact" href="#about-me"
+              >About Me</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link not-contact" href="#skills">Skills</a>
+            <a id="nav-skills" class="nav-link not-contact" href="#skills"
+              >Skills</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link not-contact" href="#projects">Projects</a>
+            <a id="nav-projects" class="nav-link not-contact" href="#projects"
+              >Projects</a
+            >
           </li>
+
+          {% if request.user.is_authenticated %}
+
           <li class="nav-item">
-            <a class="nav-link" href="#contact-me">
-              <button type="button" class="btn btn-info btn-sm">
-                Contact Me
+            <a class="nav-link" href="{% url 'add-project' %}">
+              <button type="button" id="add-project" class="btn btn-sm">
+                <img src="{% static 'folio/images/addicon.png' %}" alt="" />
+                Add project
               </button>
             </a>
           </li>
-          {% if request.user.is_authenticated %}
 
           <li class="nav-item">
             <a class="nav-link" href="{% url 'inbox' %}">
@@ -65,15 +75,15 @@
             </a>
           </li>
 
+          {% endif %}
+
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'add-project' %}">
-              <button type="button" id="add-project" class="btn btn-sm">
-                <img src="{% static 'folio/images/addicon.png' %}" alt="" />
-                Add project
+            <a class="nav-link" href="#contact-me">
+              <button type="button" class="btn btn-info btn-sm">
+                Contact Me
               </button>
             </a>
           </li>
-          {% endif %}
         </ul>
       </div>
     </div>

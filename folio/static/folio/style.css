@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 
 
 
@@ -539,6 +541,7 @@ span {
 #contact-me {
     position: relative;
     padding: 90px 0;
+    font-family: VT323, sans-serif;
 }
 
 #contact-me::after {
@@ -550,8 +553,8 @@ span {
     right: 0;
     position: absolute;
     z-index: -1;
-    background-image: url('../folio/images/contact-img3.webp');
-    background-size: cotain;
+    background-image: url('../folio/images/bg-img7.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -560,8 +563,8 @@ span {
     font-size: 60px;
     font-weight: 600;
     letter-spacing: 0.2em;
-    color: #F58840;
-    text-shadow: 0 0 5px #000;
+    color: #FFF;
+    text-shadow: 0 0 50px #000;
     text-align: center;
 }
 
@@ -579,7 +582,7 @@ span {
 
 #contact-me .mb-3 {
     padding: 5px;
-    color: #F58840;
+    color: #FFF;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.2em;
@@ -589,7 +592,7 @@ span {
 #contact-me .mb-3 input {
     width: 100%;
     color: #FFF;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .7);
     border: none;
     outline: none;
 }
@@ -598,7 +601,7 @@ span {
 #contact-me textarea {
     width: 100%;
     color: #FFF;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .7);
     border: none;
     outline: none;
 }
@@ -627,5 +630,5 @@ span {
 }
 
 #footer span {
-    color: #e2defa;
+    color: #fff;
 }

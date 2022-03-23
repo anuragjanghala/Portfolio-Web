@@ -19,15 +19,15 @@
     </div>
     <div class="socials">
       <br />
-      <p>Check my Socials :</p>
+      <p></p>
       <a href="https://www.linkedin.com/in/anuragjanghala/"
-        ><img src="{% static 'folio/images/socials/linkedin.png' %}" alt=""
+        ><img src="{% static 'folio/images/socials/lin60.png' %}" alt=""
       /></a>
       <a href="https://github.com/anuragjanghala"
-        ><img src="{% static 'folio/images/socials/github.png' %}" alt=""
+        ><img src="{% static 'folio/images/socials/gh60.png' %}" alt=""
       /></a>
       <a href="https://www.instagram.com/hopswskiii/"
-        ><img src="{% static 'folio/images/socials/instagram.png' %}" alt=""
+        ><img src="{% static 'folio/images/socials/insta48.png' %}" alt=""
       /></a>
     </div>
   </div>
@@ -74,9 +74,9 @@
 
         <br />
 
-        <h3 class="resume">
+        <!-- <h3 class="resume">
           <button class="btn resume-btn">Resume</button>
-        </h3>
+        </h3> -->
       </div>
     </div>
   </div>
@@ -189,8 +189,7 @@
           <h5 class="card-title">{{ project.title }}</h5>
           <!-- <p class="card-text">{{project.description}}</p> -->
           <a href="{{ project.gh_links }}" class="btn btn-primary"
-            ><img
-              src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"
+            ><img src="{% static 'folio/images/gh.png' %}"
           /></a>
         </div>
       </div>
@@ -267,17 +266,17 @@
           class="text-muted"
           href="https://www.linkedin.com/in/anuragjanghala/"
         >
-          <img src="{% static 'folio/images/socials/linkedin.png' %}" alt="" />
+          <img src="{% static 'folio/images/lin.png' %}" alt="" />
         </a>
       </li>
       <li class="ms-3">
         <a class="text-muted" href="https://github.com/anuragjanghala">
-          <img src="{% static 'folio/images/socials/github.png' %}" alt="" />
+          <img src="{% static 'folio/images/gh.png' %}" alt="" />
         </a>
       </li>
       <li class="ms-3">
         <a class="text-muted" href="https://www.instagram.com/hopswskiii/">
-          <img src="{% static 'folio/images/socials/instagram.png' %}" alt="" />
+          <img src="{% static 'folio/images/insta.png' %}" alt="" />
         </a>
       </li>
     </ul>

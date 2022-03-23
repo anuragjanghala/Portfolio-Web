@@ -45,7 +45,7 @@ header {
 
 #nav-home:hover {
     background-color: #0f1016;
-    color: gold;
+    color: #F58840;
 }
 
 #nav-aboutme {
@@ -55,7 +55,7 @@ header {
 
 #nav-aboutme:hover {
     background-color: #0f1016;
-    color: gold;
+    color: #F58840;
 }
 
 #nav-skills {
@@ -65,7 +65,7 @@ header {
 
 #nav-skills:hover {
     background-color: #0f1016;
-    color: gold;
+    color: #F58840;
 }
 
 #nav-projects {
@@ -75,15 +75,9 @@ header {
 
 #nav-projects:hover {
     background-color: #0f1016;
-    color: gold;
+    color: #F58840;
 }
 
-.btn-info {
-    background-color: #0f1016;
-    color: gold;
-    border: 1px solid gold;
-    border-radius: 20px;
-}
 
 #inbox, 
 #add-project {
@@ -95,12 +89,19 @@ header {
 #inbox:hover,
 #add-project:hover {
     background-color: #0f1016;
-    color: gold;
+    color: #F58840;
+}
+
+.btn-info {
+    background-color: #0f1016;
+    color: #e5e4e7;
+    border: 1px solid #F58840;
+    border-radius: 20px;
 }
 
 .btn-info:hover {
-    background-color: #710851;
-    color: #e5e4e7;
+    background-color: #F58840;
+    color: #0f1016;
     border: 1px solid #0f1016;
     border-radius: 20px;
 }
@@ -235,9 +236,9 @@ header {
 #about-me {
     margin-top: 200px;
     margin-bottom: 200px;
-    background-color: #8686861c;
+    /* background-color: #8686861c; */
     border: 1px solid #B85252;
-    border-radius: 400px;
+    border-radius: 200px;
     padding: 100px 60px 60px;
 }
 
@@ -324,7 +325,7 @@ header {
 
 #skills {
     margin-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     padding-top: 50px;
 }
 
@@ -389,7 +390,7 @@ header {
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    margin: 50px auto 300px;
+    margin: 50px auto 100px;
 }
 
 /* .marquee::after {
@@ -499,10 +500,10 @@ span {
 
 #projects .card .btn {
     padding: 5px 20px;
-    background-color: #F58840;
-    border: 1px solid #e2defa;
-    opacity: .8;
-    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    /* opacity: .8; */
+    /* border-radius: 50px; */
 }
 
 

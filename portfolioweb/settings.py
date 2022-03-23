@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2mhsn^$le3g@fyi$q93&j2ymdb=k4nn4zc$94agjn28g31a+ox
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.janghala.xyz','portfolio-janghala.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['www.janghala.xyz', 'janghala.xyz', 'portfolio-janghala.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition

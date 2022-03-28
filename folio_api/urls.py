@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from .views import ProjectList, ProjectDetail, TagList, TagDetail, MessageList, MessageDetail
 
 app_name = 'folio_api'

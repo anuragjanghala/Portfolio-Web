@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'folio_api',
     'folio.apps.FolioConfig',
     'ckeditor',
     'ckeditor_uploader',

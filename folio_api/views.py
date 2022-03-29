@@ -1,4 +1,4 @@
-from rest_framework import generics
+from rest_framework import generics, permissions
 from folio.models import Project, Tag, Message
 from .serializers import ProjectSerializer, MessageSerializer, TagSerializer
 
@@ -6,31 +6,37 @@ from .serializers import ProjectSerializer, MessageSerializer, TagSerializer
 
 
 class ProjectList(generics.ListCreateAPIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
 
 
-class ProjectDetail(generics.RetrieveDestroyAPIView):
+class ProjectDetail(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
 
 
 class MessageList(generics.ListCreateAPIView):
+    permission_classes = [permissions.IsAuthenticated]
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
 
 
 class MessageDetail(generics.RetrieveDestroyAPIView):
+    permission_classes = [permissions.IsAuthenticated]
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
     
     
 class TagList(generics.ListCreateAPIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
 
 
 class TagDetail(generics.RetrieveDestroyAPIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
     

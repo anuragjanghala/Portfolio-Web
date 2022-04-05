@@ -148,6 +148,6 @@ CSRF_TRUSTED_ORIGINS = ['https://*.janghala.xyz','https://janghala.xyz']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
     ]
 }

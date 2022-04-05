@@ -15,18 +15,6 @@ class ProjectDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
-
-
-class MessageList(generics.ListCreateAPIView):
-    permission_classes = [permissions.IsAuthenticated]
-    queryset = Message.objects.all()
-    serializer_class = MessageSerializer
-
-
-class MessageDetail(generics.RetrieveDestroyAPIView):
-    permission_classes = [permissions.IsAuthenticated]
-    queryset = Message.objects.all()
-    serializer_class = MessageSerializer
     
     
 class TagList(generics.ListCreateAPIView):
@@ -39,6 +27,31 @@ class TagDetail(generics.RetrieveDestroyAPIView):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
+    
+    
+
+class IsPostOrIsAuthenticated(permissions.BasePermission):        
+
+    def has_permission(self, request, view):
+        # allow all POST requests
+        if request.method == 'POST':
+            return True
+
+        # Otherwise, only allow authenticated requests
+        # Post Django 1.10, 'is_authenticated' is a read-only attribute
+        return request.user and request.user.is_authenticated
+
+
+class MessageList(generics.ListCreateAPIView):
+    permission_classes = [IsPostOrIsAuthenticated]
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer
+
+
+class MessageDetail(generics.RetrieveDestroyAPIView):
+    permission_classes = [permissions.IsAuthenticated]
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer
     
 
 """ Concrete View Classes

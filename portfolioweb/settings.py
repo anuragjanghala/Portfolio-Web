@@ -104,9 +104,9 @@ DATABASES = {
 
         'NAME': 'PortfolioWebDB',
 
-        'USER': 'anuragjanghala',
+        'USER': config('USER_DB'),
 
-        'PASSWORD': 'd3PzeneQ@21',
+        'PASSWORD': config('PASSWORD_DB'),
 
         'HOST': 'localhost',
 

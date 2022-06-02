@@ -1,3 +1,5 @@
-folio/__pycache__
-folio/migrations/__pycache__
-portfolioweb/__pycache__
+*/__pycache__
+*/*/__pycache__
+.coverage
+datadump.json
+.env
